@@ -299,7 +299,7 @@ footer p{
    .Logo{
       grid-column: 2;
       grid-row: 1;
-      padding-left: 32%;
+      padding-left: 31%;
    }
    footer {
       width: 100%;
@@ -317,5 +317,27 @@ footer p{
    }
    .main-information p{
       margin-top: 10px;
+   }
+}
+@media screen and (max-width: 380px){
+   *{
+      font-size: 6vw;
+   }
+   header .logo,
+   header nav {
+      font-size: 40px;
+   }
+   header nav a{
+      padding: 1px 5px;
+      font-size: 15px;
+   }
+   main{
+      height: 950px;
+   }
+   .main{
+      height: 690px;
+   }
+   .Logo{
+      padding-left: 30%;
    }
 }
