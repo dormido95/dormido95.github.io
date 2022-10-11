@@ -1,10 +1,12 @@
-*{
+*{  
+    
     padding: 0;
     box-sizing: border-box;
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .main{
+
    height: 610px;
    background-image: url(./Tax.jpg);
    background-position: center;
@@ -33,7 +35,7 @@ body{
    display: grid;
    padding-right: 10px;
 }
- .wrapper {
+ .wrapper{
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr;
     grid-template-rows: 3fr;
@@ -132,6 +134,9 @@ main{
 .Logo{
    padding-top: 11px;
 }
+.home3{
+   background-color: rgb(240, 240, 240);
+}
 
 
 /**************Footer****************/
@@ -152,11 +157,14 @@ footer p{
 
 /**************Responsive****************/
 @media screen and (max-width: 1080px){
-   header .logo,
-   header nav {
+header .logo,
+header nav {
       width: 100%;
       text-align: center; 
 }
+header{
+      padding-left: 2em;
+   }
 .wrapper{
    grid-template-columns: 0.5fr 2fr 2fr;
    grid-template-rows: 3fr;
@@ -188,10 +196,11 @@ img{
 }
 main{
    padding-left: 1em;
-   padding-right: 2em;
+   padding-right: 1em;
    height: 120vh;
 }
 footer {
+   display: grid;
    width: 100%;
    height: 10px;
    background-color: black;
@@ -200,96 +209,113 @@ footer {
 }
 footer p{
    padding-top: 10px;
-   background-color: black;
-   color: white;
    margin-top: 50px;
    border: 0em;
+   grid-template-columns: 1fr;
+   grid-template-rows: 3fr;
 }
 }
-
 @media screen and (max-width: 780px){
    header .logo,
    header nav {
-
       width: 100%;
       text-align: center; 
    }
+   .wrapper{
+      grid-template-columns: 0.1fr 10fr 0.1fr;
+      grid-template-rows: 4fr;
+   }
+   header{
+      padding-left: 0em;
+   }
    main{
-      padding-left: 1em;
-      padding-right: 2em;
       height: 135vh;
    }
    .main{
       height: 790px;
+   }
+   .second-description{
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr;
+   }
+   .logo{
+      grid-column: 2;
+      grid-row: 2;
+   }
+   .nav-menu{
+      text-align: center;
+      grid-column: 2;
+      grid-row: 3;
+   }
+   .Logo{
+      grid-column: 2;
+      grid-row: 1;
+      padding-left: 37%;
+   }
+}
+@media screen and (max-width: 600px){
+   .stock{
+      padding-right: 0em;
+   }
+   main{
+      height: 1200px;
+   }
+   .main{
+      height: 890px;
    }
 }
 
-@media screen and (max-width: 530px){
+@media screen and (max-width: 470px){
+   *{
+      font-size: 6vw;
+   }
    header .logo,
    header nav {
-      width: 100%;
-      text-align: center; 
+      font-size: 40px;
+   }
+   header nav a{
+      padding: 1px 5px;
+      font-size: 17px;
+   }
+   .wrapper{
+      grid-template-columns: 0.1fr 10fr 0.1fr;
+      grid-template-rows: 4fr;
    }
    main{
-      padding-left: 1em;
-      padding-right: 1em;
-      height: 135vh;
-      width: 635px;
+      height: 1000px;
    }
    .main{
-      width: 639px;
       height: 790px;
    }
+   .logo{
+      grid-column: 2;
+      grid-row: 2;
+   }
+   .nav-menu{
+      text-align: center;
+      grid-column: 2;
+      grid-row: 3;
+   }
+   .Logo{
+      grid-column: 2;
+      grid-row: 1;
+      padding-left: 32%;
+   }
    footer {
-      width: 635px;
-      height: 10px;
-      background-color: black;
+      width: 100%;
+      height: 30px;
       text-align: center;
       font-size: 35px;
    }
    footer p{
-      width: 635px;
-      padding-top: 0px;
-      background-color: black;
-      color: white;
-      margin-top: 5px;
-      border: 0em;
+      width: 100%;
+      margin-top: 10px;
    }
-   .wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 2fr;
-      margin: auto;
-      overflow: hidden;
+   .main-information{
+      font-size: 30px;
+      padding-top: 35px;
    }
-   .Logo{
-      padding-left: 210px;
-   }
-   header .logo{
-      grid-column: 1;
-      color: rgb(15, 15, 15);
-      font-size: 60px;
-      line-height: 110px;
-   }
-   header nav{
-      float: right;
-      line-height: 110px;
-    }
-    .stock{
-      display: grid;
-      padding-right: 0px;
-      width: 639px;
-    }
-   .nav-menu{
-      grid-column: 1;
-      grid-row: 3;
-      display: inline-block;
-   }
-   header .logo{
-      grid-column: 1;
-      color: rgb(15, 15, 15);
-      font-size: 60px;
-      line-height: 110px;
-      float: right;
+   .main-information p{
+      margin-top: 10px;
    }
 }

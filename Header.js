@@ -1,4 +1,6 @@
 const a = document.querySelector("a");
+
+    
 //-------------------------------Number of scroll----------------------------------//
 window.onscroll = function() {
     var y = window.scrollY;
@@ -37,10 +39,11 @@ function btnOnClick(){
 
 function OnClick(){
         document.getElementById("accounting-information").innerHTML = "El concepto es brindar servicios para las pymes se basa en las necesidades de las mismas <br> tanto en facturacion como posicion impositiva frente al estado.<br> Por lo cual se brindan serivicos tanto para S.A.S, SRL y Cia.<br><br> Balances generales <br> Liquidacion de impuestos <br> Control de facturacion compra/venta frente a IVA";
-        
+        window.scrollTo(0,0);
 }
     //-----------------------Queda ver la pagina: como volver al home(texto anterior al apretar contabilidad. Removeto/(PLATZI))------------------------------//
-function lick(){
-    document.getElementById("accounting-information").innerHTML = "El concepto es brindar servicios para las pymes se basa en las necesidades de las mismas <br> tanto en facturacion como posicion impositiva frente al estado.<br> Por lo cual se brindan serivicos tanto para S.A.S, SRL y Cia.<br><br> Balances generales <br> Liquidacion de impuestos <br> Control de facturacion compra/venta frente a IVA";
-    window.scrollTo(0,0);
+function Click(){
+    location.reload() 
 }
+//-----------------------Ver como hacer para que home me reinicie la pagina en 0------------------------------//
+//-----------------------Hacer que el boton "legal" quede siempre en finanzas despues de subir cierta cantidad de scroll ()------------------------------//
